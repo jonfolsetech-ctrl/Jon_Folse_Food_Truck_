@@ -60,8 +60,8 @@ app/
   layout.tsx        Site-wide metadata and document layout
   page.tsx          Homepage content and structured data
 public/
-  jon-folse-brand.png  Official brand artwork
-  og.png               Social-sharing image
+  jonfolsefoodtrucklogo.png  Official brand artwork
+  og.png                    Social-sharing image
 tests/
   rendered-html.test.mjs
 worker/
