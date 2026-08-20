@@ -1,5 +1,8 @@
+'use client';
+
 import type { Metadata } from "next";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export const metadata: Metadata = {
   title: "South Louisiana Food Truck & Catering",
@@ -51,6 +54,10 @@ const schedule = [
 function Flourish() { return <span className="flourish" aria-hidden="true"><i /><b>✦</b><i /></span>; }
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return <main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
     <a className="skip-link" href="#main-content">Skip to content</a>
